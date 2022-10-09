@@ -1,15 +1,12 @@
-import { component$, useContext } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
-import { MyContext } from "~/components/my-context";
 
 export default component$(() => {
-  const state = useContext(MyContext);
-
   return (
     <div>
       <h1>
-        Welcome to Qwik <span class="lightning">⚡️</span>. State {state.count}
+        Welcome to Qwik <span class="lightning">⚡️</span>.
       </h1>
 
       <ul>
